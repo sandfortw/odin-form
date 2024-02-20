@@ -101,6 +101,7 @@ body{
 #form-inputs{
   background: white;
   border: black;
+  box-shadow: 0px 10px 10px -10px gray; ;
 }
 
 #fern-pic{

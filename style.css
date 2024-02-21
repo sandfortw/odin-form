@@ -68,8 +68,8 @@ body{
 #logo-container{
   background-color: rgb(0 0 0 / 50%);
   width: inherit;
-  height: 15vh;
-  margin-bottom: 15vw;
+  height: clamp(10vw, 15vh, 20vh);
+  margin-bottom: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,12 +77,12 @@ body{
 
 #logo-photo-col p{
   font-family: 'Norse-Bold';
-  font-size: calc(4vw + 4vh);
-  padding-top: 3vw;
+  font-size: clamp(5vw, 10vh, 15vh);
+  padding-top: 4vh;
 }
 
 #logo-photo-col img{
-  width: 20%;
+  height: min(150px, 90%)
 }
 
 #main-content-col{
@@ -102,7 +102,8 @@ body{
 #my-form{
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 4vw;
 }
 
 #form-inputs{

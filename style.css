@@ -92,6 +92,13 @@ body{
   display: flex;
 }
 
+#call-to-action{
+  margin-left: 3vw;
+  margin-right: 10vw;
+  font-weight: 550;
+  line-height: 21px;
+}
+
 #my-form{
   display: flex;
   flex-direction: column;
@@ -101,19 +108,72 @@ body{
 #form-inputs{
   background: white;
   border: black;
-  box-shadow: 0px 10px 10px -10px gray; ;
+  box-shadow: 0px 10px 10px -10px gray;
+  display: flex;
+  flex-direction: column;
+}
+
+legend{
+  margin: 3vh 0 0 3vw;
+  font-weight: 550;
+}
+
+#form-columns{
+  display: flex;
+
+}
+
+.form-column{
+  color: #333C49;
+  font-size: .7rem;
+  display: flex;
+  flex-direction: column;
+  margin: 2vh 2vw 2vh 3vw;
+}
+
+label{
+  margin: 1vh 0 ;
 }
 
 #fern-pic{
   width: 100%;
 }
 
-input:invalid{
-  border: 2px solid red;
+input{
+  border-radius: 3px;
+  width: 18vw;
+  border: 1px solid #E5E7EB;
+}
+
+input:focus{
+  outline: 1px solid rgba(6, 25, 235, 0.552);
+  box-shadow: 2px 2px 2px 0px gray;
+}
+
+
+input:invalid:focus{
+  outline: 1px solid rgba(6, 25, 235, 0.552);
+}
+
+label > p {
+  color: rgb(207, 7, 7);
+  margin-top: 1vw;
+}
+
+#button-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 3vw;
+  gap: 3vh;
 }
 
 button{
   background-color: #596D48;
   color: white;
+  border-radius: 5px;
+  padding: 10px 40px;
+  box-shadow: 0px 10px 10px -10px gray;
 }
 

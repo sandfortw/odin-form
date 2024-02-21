@@ -1,52 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-<div id="logo-photo-col">
-  <div id="logo-container">
-    <img src="assets/odin-lined.png" alt="odin_project_logo"> 
-    <p>ODIN</p>
+  <div id="logo-photo-col">
+    <div id="logo-container">
+      <img src="assets/odin-lined.png" alt="odin_project_logo" />
+      <p>ODIN</p>
+    </div>
   </div>
-</div>
-<div id="main-content-col">
-  <form action="script.js" method="post" id="my-form">
-    <div id="call-to-action">
-      <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
-      <p>Sign up <em>now</em> to get started.</p>
-      <br>
-      <p>You <em>know</em> you want to.</p>
-    </div>
-    <div id="form-inputs">
-      <label for="first-name">
-        FIRST NAME <input type="text" name="user-first-name" id="first-name" required>
-      </label>
-      <label for="last-name">
-        LAST NAME <input type="text" name="user-last-name" id="last-name" required>
-      </label>
-      <label for="email">
-        EMAIL <input type="email" name="user-email" id="email" required>
-      </label>
-      <label for="phone-number">
-        PHONE NUMBER <input type="tel" name="user-phone-number" id="phone-number" required>
-      </label>
-      <label for="password">
-        PASSWORD <input type="password" name="password" id="password" required>
-      </label>
-      <label for="confirm-password">
-        CONFIRM PASSWORD <input type="password" name="confirm-password" id="confirm-password" required>
-      </label>
-    </div>
-    <div>
-      <button type="submit">Create Account</button>
-      <p>Already have an account? <a href="/nowhere">Log in</a></p>
-    </div>
-  </form>
-</div>
+  <div id="main-content-col">
+    <form action="script.js" method="post" id="my-form">
+      <div id="call-to-action">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams.
+        </p>
+        <p>Sign up <em>now</em> to get started.</p>
+        <br />
+        <p>You <em>know</em> you want to.</p>
+      </div>
+      <div id="form-inputs">
+        <legend>Let's do this!</legend>
+        <div id="form-columns">
+          <div class="form-column" id="form-col-1">
+            <label for="first-name">
+              FIRST NAME<br /><input type="text" name="user-first-name" id="first-name" required />
+            </label>
+            <label for="email">
+              EMAIL<br /><input type="email" name="user-email" id="email" required />
+            </label>
+            <label for="password">
+              PASSWORD<br /><input type="password" name="password" id="password" required />
+              <p hidden="true">*Passwords do not match</p>
+            </label>
+          </div>
+          <div class="form-column" id="form-col-2">
+            <label for="last-name">
+              LAST NAME<br /><input type="text" name="user-last-name" id="last-name" required />
+            </label>
+            <label for="phone-number">
+              PHONE NUMBER<br /><input type="tel" name="user-phone-number" id="phone-number" required />
+            </label>
+            <label for="confirm-password">
+              CONFIRM PASSWORD<br /><input type="password" name="confirm-password" id="confirm-password" required />
+            </label>
+          </div>
+        </div>
+      </div>
+      <div id="button-container">
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <a href="/nowhere">Log in</a></p>
+      </div>
+    </form>
+  </div>
 </body>
+
 </html>
